@@ -814,60 +814,70 @@ Use these alternatives to run the local Context7 MCP server with other runtimes.
 <details>
 <summary><b>Using Docker</b></summary>
 
-If you prefer to run the MCP server in a Docker container:
+You can run the MCP server in a Docker container using either Docker Compose (for HTTP mode) or Docker Run (for stdio mode).
 
-1. **Build the Docker Image:**
+### Option 1: Docker Compose (HTTP Mode)
 
-   First, create a `Dockerfile` in the project root (or anywhere you prefer):
-
-   <details>
-   <summary>Click to see Dockerfile content</summary>
-
-   ```Dockerfile
-   FROM node:18-alpine
-
-   WORKDIR /app
-
-   # Install the latest version globally
-   RUN npm install -g @upstash/context7-mcp
-
-   # Expose default port if needed (optional, depends on MCP client interaction)
-   # EXPOSE 3000
-
-   # Default command to run the server
-   CMD ["context7-mcp"]
-   ```
-
-   </details>
-
-   Then, build the image using a tag (e.g., `context7-mcp`). **Make sure Docker Desktop (or the Docker daemon) is running.** Run the following command in the same directory where you saved the `Dockerfile`:
+1. **Clone the repository:**
 
    ```bash
-   docker build -t context7-mcp .
+   git clone https://github.com/upstash/context7.git
+   cd context7
    ```
 
-2. **Configure Your MCP Client:**
+2. **Run with Docker Compose:**
 
-   Update your MCP client's configuration to use the Docker command.
+   ```bash
+   cd packages/mcp
+   cp .env.example .env
+   docker-compose up -d
+   ```
 
-   _Example for a cline_mcp_settings.json:_
+   This will start the server on port 3000.
+
+3. **Configure Your MCP Client:**
+
+   _Example for Cursor/Windsurf/VS Code (Remote Server Connection):_
 
    ```json
    {
      "mcpServers": {
-       "Сontext7": {
-         "autoApprove": [],
-         "disabled": false,
-         "timeout": 60,
-         "command": "docker",
-         "args": ["run", "-i", "--rm", "context7-mcp"],
-         "transportType": "stdio"
+       "context7": {
+         "url": "http://localhost:3000/mcp",
+         "headers": {
+           "CONTEXT7_API_KEY": "YOUR_API_KEY"
+         }
        }
      }
    }
    ```
 
-   _Note: This is an example configuration. Please refer to the specific examples for your MCP client (like Cursor, VS Code, etc.) earlier in this README to adapt the structure (e.g., `mcpServers` vs `servers`). Also, ensure the image name in `args` matches the tag used during the `docker build` command._
+### Option 2: Docker Run (Stdio Mode)
+
+If you prefer to run the server via `stdio` (piping input/output directly), you can build and run the image manually.
+
+1. **Build the image:**
+
+   From the project root:
+
+   ```bash
+   docker build -t context7-mcp -f packages/mcp/Dockerfile .
+   ```
+
+2. **Configure Your MCP Client:**
+
+   _Example for Cursor/Windsurf/VS Code (Local Server Connection):_
+
+   ```json
+   {
+     "mcpServers": {
+       "context7": {
+         "command": "docker",
+         "args": ["run", "-i", "--rm", "context7-mcp", "node", "packages/mcp/dist/index.js", "--transport", "stdio", "--api-key", "YOUR_API_KEY"]
+       }
+     }
+   }
+   ```
 
 </details>
 
