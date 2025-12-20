@@ -816,7 +816,40 @@ Use these alternatives to run the local Context7 MCP server with other runtimes.
 
 If you prefer to run the MCP server in a Docker container:
 
-1. **Build the Docker Image:**
+1. **Pull the Docker Image:**
+
+   You can pull the prebuilt image from the GitHub Container Registry:
+
+   ```bash
+   docker pull ghcr.io/upstash/context7:latest
+   ```
+
+2. **Configure Your MCP Client:**
+
+   Update your MCP client's configuration to use the Docker command.
+
+   _Example for a cline_mcp_settings.json:_
+
+   ```json
+   {
+     "mcpServers": {
+       "Сontext7": {
+         "autoApprove": [],
+         "disabled": false,
+         "timeout": 60,
+         "command": "docker",
+         "args": ["run", "-i", "--rm", "ghcr.io/upstash/context7:latest"],
+         "transportType": "stdio"
+       }
+     }
+   }
+   ```
+
+   _Note: This is an example configuration. Please refer to the specific examples for your MCP client (like Cursor, VS Code, etc.) earlier in this README to adapt the structure (e.g., `mcpServers` vs `servers`)._
+
+3. **Option 2: Build Manually (via NPM)**
+
+   If you prefer to build the image yourself using the NPM package:
 
    First, create a `Dockerfile` in the project root (or anywhere you prefer):
 
@@ -846,28 +879,7 @@ If you prefer to run the MCP server in a Docker container:
    docker build -t context7-mcp .
    ```
 
-2. **Configure Your MCP Client:**
-
-   Update your MCP client's configuration to use the Docker command.
-
-   _Example for a cline_mcp_settings.json:_
-
-   ```json
-   {
-     "mcpServers": {
-       "Сontext7": {
-         "autoApprove": [],
-         "disabled": false,
-         "timeout": 60,
-         "command": "docker",
-         "args": ["run", "-i", "--rm", "context7-mcp"],
-         "transportType": "stdio"
-       }
-     }
-   }
-   ```
-
-   _Note: This is an example configuration. Please refer to the specific examples for your MCP client (like Cursor, VS Code, etc.) earlier in this README to adapt the structure (e.g., `mcpServers` vs `servers`). Also, ensure the image name in `args` matches the tag used during the `docker build` command._
+   Then update your MCP client configuration to use `context7-mcp` as the image name in `args`.
 
 </details>
 

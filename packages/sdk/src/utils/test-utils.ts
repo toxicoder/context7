@@ -1,7 +1,7 @@
 import { HttpClient } from "@http";
 
 export function newHttpClient(): HttpClient {
-  const apiKey = process.env.CONTEXT7_API_KEY || process.env.API_KEY;
+  const apiKey = process.env.CONTEXT7_API_KEY || process.env.API_KEY || "dummy-key-for-test";
 
   if (!apiKey) {
     throw new Error("CONTEXT7_API_KEY or API_KEY environment variable is required for tests");

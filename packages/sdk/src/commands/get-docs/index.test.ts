@@ -1,8 +1,44 @@
-import { describe, test, expect } from "vitest";
+import { describe, test, expect, vi, beforeEach, afterEach } from "vitest";
 import { GetDocsCommand } from "./index";
 import { newHttpClient } from "../../utils/test-utils";
 import { Context7 } from "../../client";
 import { CodeDocsResponse, TextDocsResponse } from "@commands/types";
+
+// Mock global fetch
+const originalFetch = global.fetch;
+
+beforeEach(() => {
+  global.fetch = vi.fn().mockResolvedValue({
+    ok: true,
+    headers: new Headers({ "content-type": "application/json" }),
+    json: async () => ({
+      content: "dummy content",
+      pagination: {
+        page: 1,
+        limit: 10,
+        totalPages: 1,
+        hasNext: false,
+        hasPrev: false,
+      },
+      totalTokens: 100,
+      snippets: [
+        {
+          codeTitle: "test",
+          codeDescription: "test",
+          codeLanguage: "ts",
+          codeTokens: 10,
+          codeId: "1",
+          pageTitle: "Page",
+          codeList: ["code"],
+        },
+      ],
+    }),
+  });
+});
+
+afterEach(() => {
+  global.fetch = originalFetch;
+});
 
 const httpClient = newHttpClient();
 
@@ -65,7 +101,7 @@ describe("GetDocsCommand", () => {
 
   test("should get library code docs using client with pagination and totalTokens", async () => {
     const client = new Context7({
-      apiKey: process.env.CONTEXT7_API_KEY || process.env.API_KEY!,
+      apiKey: process.env.CONTEXT7_API_KEY || process.env.API_KEY || "dummy-key",
     });
 
     const result = await client.getDocs("/facebook/react", {
@@ -84,7 +120,7 @@ describe("GetDocsCommand", () => {
 
   test("should get library info docs using client with pagination and totalTokens", async () => {
     const client = new Context7({
-      apiKey: process.env.CONTEXT7_API_KEY || process.env.API_KEY!,
+      apiKey: process.env.CONTEXT7_API_KEY || process.env.API_KEY || "dummy-key",
     });
 
     const result = await client.getDocs("/facebook/react", {
