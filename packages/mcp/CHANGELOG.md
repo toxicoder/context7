@@ -1,5 +1,11 @@
 # @upstash/context7-mcp
 
+## 1.0.34
+
+### Patch Changes
+
+- 1129fc0: Add GitHub Actions workflow for publishing Docker image to GHCR and update README with Docker instructions.
+
 ## 1.0.33
 
 ### Patch Changes
