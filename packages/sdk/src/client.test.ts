@@ -101,7 +101,8 @@ describe("Context7 Client", () => {
             {
               id: "/microsoft/typescript",
               title: "TypeScript",
-              description: "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+              description:
+                "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
               branch: "main",
               lastUpdateDate: "2023-01-01",
               state: "indexed",
@@ -135,9 +136,9 @@ describe("Context7 Client", () => {
           results: [
             {
               id: "dummy",
-            }
-          ]
-        })
+            },
+          ],
+        }),
       });
 
       const queries = ["vue", "express", "next"];
@@ -159,7 +160,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           content: "dummy content",
           pagination: { page: 1, totalPages: 1 },
-          totalTokens: 100
+          totalTokens: 100,
         }),
       });
 
@@ -185,7 +186,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           content: "dummy content",
           pagination: { page: 1, totalPages: 1 },
-          totalTokens: 100
+          totalTokens: 100,
         }),
       });
 
@@ -205,13 +206,13 @@ describe("Context7 Client", () => {
     });
 
     test("should get docs with default format (json)", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
           snippets: [],
           totalTokens: 0,
-          pagination: {}
+          pagination: {},
         }),
       });
 
@@ -226,23 +227,25 @@ describe("Context7 Client", () => {
     });
 
     test("should get docs with pagination metadata", async () => {
-      (global.fetch as any).mockResolvedValueOnce({
-        ok: true,
-        headers: new Headers({ "content-type": "application/json" }),
-        json: async () => ({
-          content: "page 1",
-          pagination: { page: 1 },
-          totalTokens: 10
-        }),
-      }).mockResolvedValueOnce({
-        ok: true,
-        headers: new Headers({ "content-type": "application/json" }),
-        json: async () => ({
-          content: "page 2",
-          pagination: { page: 2 },
-          totalTokens: 10
-        }),
-      });
+      (global.fetch as any)
+        .mockResolvedValueOnce({
+          ok: true,
+          headers: new Headers({ "content-type": "application/json" }),
+          json: async () => ({
+            content: "page 1",
+            pagination: { page: 1 },
+            totalTokens: 10,
+          }),
+        })
+        .mockResolvedValueOnce({
+          ok: true,
+          headers: new Headers({ "content-type": "application/json" }),
+          json: async () => ({
+            content: "page 2",
+            pagination: { page: 2 },
+            totalTokens: 10,
+          }),
+        });
 
       const page1 = await client.getDocs("/facebook/react", {
         mode: "code",
@@ -275,7 +278,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           content: "hooks",
           pagination: {},
-          totalTokens: 100
+          totalTokens: 100,
         }),
       });
 
@@ -301,17 +304,19 @@ describe("Context7 Client", () => {
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
-          snippets: [{
-            codeTitle: "test",
-            codeDescription: "test",
-            codeLanguage: "ts",
-            codeTokens: 10,
-            codeId: "1",
-            pageTitle: "Page",
-            codeList: ["code"]
-          }],
+          snippets: [
+            {
+              codeTitle: "test",
+              codeDescription: "test",
+              codeLanguage: "ts",
+              codeTokens: 10,
+              codeId: "1",
+              pageTitle: "Page",
+              codeList: ["code"],
+            },
+          ],
           totalTokens: 100,
-          pagination: { page: 1, totalPages: 1 }
+          pagination: { page: 1, totalPages: 1 },
         }),
       });
 
@@ -334,16 +339,18 @@ describe("Context7 Client", () => {
     });
 
     test("should get info docs as JSON", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
-          snippets: [{
-            content: "info",
-            contentTokens: 10
-          }],
+          snippets: [
+            {
+              content: "info",
+              contentTokens: 10,
+            },
+          ],
           totalTokens: 100,
-          pagination: { page: 1, totalPages: 1 }
+          pagination: { page: 1, totalPages: 1 },
         }),
       });
 
@@ -366,21 +373,23 @@ describe("Context7 Client", () => {
     });
 
     test("should have correct code snippet structure", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
-          snippets: [{
-            codeTitle: "test",
-            codeDescription: "test",
-            codeLanguage: "ts",
-            codeTokens: 10,
-            codeId: "1",
-            pageTitle: "Page",
-            codeList: ["code"]
-          }],
+          snippets: [
+            {
+              codeTitle: "test",
+              codeDescription: "test",
+              codeLanguage: "ts",
+              codeTokens: 10,
+              codeId: "1",
+              pageTitle: "Page",
+              codeList: ["code"],
+            },
+          ],
           totalTokens: 100,
-          pagination: {}
+          pagination: {},
         }),
       });
 
@@ -406,12 +415,14 @@ describe("Context7 Client", () => {
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
-          snippets: [{
-            content: "info",
-            contentTokens: 10
-          }],
+          snippets: [
+            {
+              content: "info",
+              contentTokens: 10,
+            },
+          ],
           totalTokens: 100,
-          pagination: {}
+          pagination: {},
         }),
       });
 
@@ -429,7 +440,7 @@ describe("Context7 Client", () => {
     });
 
     test("should have correct pagination structure", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
@@ -440,8 +451,8 @@ describe("Context7 Client", () => {
             limit: 5,
             totalPages: 10,
             hasNext: true,
-            hasPrev: false
-          }
+            hasPrev: false,
+          },
         }),
       });
 
@@ -468,7 +479,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           snippets: [{}, {}],
           totalTokens: 0,
-          pagination: {}
+          pagination: {},
         }),
       });
 
@@ -492,7 +503,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           content: "v18",
           pagination: {},
-          totalTokens: 10
+          totalTokens: 10,
         }),
       });
 
@@ -513,13 +524,13 @@ describe("Context7 Client", () => {
     const client = new Context7({ apiKey });
 
     test("should get docs for Vue", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
           content: "vue",
           pagination: {},
-          totalTokens: 10
+          totalTokens: 10,
         }),
       });
 
@@ -537,13 +548,13 @@ describe("Context7 Client", () => {
     });
 
     test("should get docs for Express", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
           content: "express",
           pagination: {},
-          totalTokens: 10
+          totalTokens: 10,
         }),
       });
 
@@ -570,7 +581,7 @@ describe("Context7 Client", () => {
         status: 404,
         statusText: "Not Found",
         headers: new Headers({ "content-type": "application/json" }),
-        json: async () => ({ error: "Not Found" })
+        json: async () => ({ error: "Not Found" }),
       });
 
       await expect(
@@ -586,7 +597,7 @@ describe("Context7 Client", () => {
       (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
-        json: async () => ({ results: [] })
+        json: async () => ({ results: [] }),
       });
 
       const result = await client.searchLibrary("");
@@ -606,7 +617,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           content: "text",
           pagination: {},
-          totalTokens: 10
+          totalTokens: 10,
         }),
       });
 
@@ -623,13 +634,13 @@ describe("Context7 Client", () => {
     });
 
     test("should infer CodeDocsResponse for json format with code mode", async () => {
-       (global.fetch as any).mockResolvedValue({
+      (global.fetch as any).mockResolvedValue({
         ok: true,
         headers: new Headers({ "content-type": "application/json" }),
         json: async () => ({
           snippets: [],
           totalTokens: 0,
-          pagination: {}
+          pagination: {},
         }),
       });
 
@@ -650,7 +661,7 @@ describe("Context7 Client", () => {
         json: async () => ({
           snippets: [],
           totalTokens: 0,
-          pagination: {}
+          pagination: {},
         }),
       });
 
