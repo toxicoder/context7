@@ -1,5 +1,11 @@
 # @upstash/context7-mcp
 
+## 1.0.36
+
+### Patch Changes
+
+- 04a8c2a: fix(ci): fix npm authentication in release workflow
+
 ## 1.0.35
 
 ### Patch Changes
