@@ -34,14 +34,20 @@ jobs:
               { encoding: 'utf-8' }
             );
 
-            const hasChangeset = diff
-              .split('\n')
-              .some(file => file.startsWith('.changeset/') && file.endsWith('.md') && !file.includes('README'));
+            const files = diff.split('\n').filter(f => f.trim().length > 0);
+            const hasChangeset = files.some(file => file.startsWith('.changeset/') && file.endsWith('.md') && !file.includes('README'));
 
-            if (!hasChangeset) {
-              core.setFailed(
-                'No changeset found. Please add a changeset using `pnpm changeset` or add the "skip-changeset" label if this PR doesn\'t need one (e.g., docs, CI changes).'
-              );
-            } else {
+            if (hasChangeset) {
               console.log('Changeset found!');
+              return;
             }
+
+            const isOnlyCi = files.every(file => file.startsWith('.github/'));
+            if (isOnlyCi) {
+              console.log('Skipping changeset check for CI-only changes');
+              return;
+            }
+
+            core.setFailed(
+              'No changeset found. Please add a changeset using `pnpm changeset` or add the "skip-changeset" label if this PR doesn\'t need one (e.g., docs, CI changes).'
+            );
