@@ -24,7 +24,7 @@ const createMockModel = () => {
 
 const mockModel = createMockModel();
 
-describe("@upstash/context7-tools-ai-sdk", () => {
+describe("@toxicoder/context7-tools-ai-sdk", () => {
   describe("Tool structure", () => {
     test("resolveLibrary() should return a tool object with correct structure", () => {
       const tool = resolveLibrary();

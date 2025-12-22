@@ -7,7 +7,7 @@ This guide helps you resolve common issues when setting up or using Context7 MCP
 ## Quick Checklist
 
 - Confirm Node.js v18+ is installed (`node --version`)
-- Update to the latest Context7 MCP package (`@upstash/context7-mcp@latest`)
+- Update to the latest Context7 MCP package (`@toxicoder/context7-mcp@latest`)
 - Verify connectivity with `curl https://mcp.context7.com/mcp/ping`
 - Add your API key to the configuration if you hit rate limits
 - Enable debug logs (`DEBUG=*`) before collecting support information
@@ -23,7 +23,7 @@ If you encounter `ERR_MODULE_NOT_FOUND`, try using `bunx` instead of `npx`:
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -40,7 +40,7 @@ For errors such as `Error: Cannot find module 'uriTemplate.js'`, try the `--expe
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -55,7 +55,7 @@ Use the `--experimental-fetch` flag to bypass TLS-related problems:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-fetch", "@upstash/context7-mcp"]
+      "args": ["-y", "--node-options=--experimental-fetch", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -70,7 +70,7 @@ Use the `--experimental-fetch` flag to bypass TLS-related problems:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -83,7 +83,7 @@ Use the `--experimental-fetch` flag to bypass TLS-related problems:
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -100,7 +100,7 @@ Use the `--experimental-fetch` flag to bypass TLS-related problems:
         "run",
         "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION",
         "--allow-net",
-        "npm:@upstash/context7-mcp"
+        "npm:@toxicoder/context7-mcp"
       ]
     }
   }
@@ -147,7 +147,7 @@ Alternatively, use this configuration with `cmd`:
   "mcpServers": {
     "context7": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -165,7 +165,7 @@ On macOS, some users may encounter the same request timeout errors. Use the full
     "context7": {
       "command": "/Users/yourname/.nvm/versions/node/v22.14.0/bin/node",
       "args": [
-        "/Users/yourname/.nvm/versions/node/v22.14.0/lib/node_modules/@upstash/context7-mcp/dist/index.js",
+        "/Users/yourname/.nvm/versions/node/v22.14.0/lib/node_modules/@toxicoder/context7-mcp/dist/index.js",
         "--transport",
         "stdio",
         "--api-key",
@@ -224,7 +224,7 @@ For stdio transport:
 
 ```json
 {
-  "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+  "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
 }
 ```
 
@@ -274,7 +274,7 @@ export HTTPS_PROXY=http://proxy.example.com:8080
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
       "env": {
         "https_proxy": "http://proxy.example.com:8080",
         "HTTPS_PROXY": "http://proxy.example.com:8080"
@@ -297,7 +297,7 @@ Add debug output to your configuration:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
       "env": {
         "DEBUG": "*"
       }
@@ -311,7 +311,7 @@ Add debug output to your configuration:
 Test your setup independently:
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 
 This opens an interactive inspector to test Context7 tools.
@@ -330,7 +330,7 @@ Expected response: `{"status": "ok", "message": "pong"}`
 
 If these solutions don't resolve your issue:
 
-1. **Check GitHub Issues**: Search for similar problems at [github.com/upstash/context7/issues](https://github.com/upstash/context7/issues)
+1. **Check GitHub Issues**: Search for similar problems at [github.com/toxicoder/context7/issues](https://github.com/toxicoder/context7/issues)
 2. **Create a new issue**: Include your:
    - Operating system and version
    - Node.js version (`node --version`)

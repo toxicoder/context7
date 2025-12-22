@@ -1,6 +1,6 @@
 import { tool } from "ai";
 import { z } from "zod";
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 import type { Context7ToolsConfig } from "./types";
 import { GET_LIBRARY_DOCS_DESCRIPTION } from "@prompts";
 
@@ -15,7 +15,7 @@ import { GET_LIBRARY_DOCS_DESCRIPTION } from "@prompts";
  *
  * @example
  * ```typescript
- * import { resolveLibrary, getLibraryDocs } from '@upstash/context7-tools-ai-sdk';
+ * import { resolveLibrary, getLibraryDocs } from '@toxicoder/context7-tools-ai-sdk';
  * import { generateText, stepCountIs } from 'ai';
  * import { openai } from '@ai-sdk/openai';
  *

@@ -1,6 +1,6 @@
 # Context7 MCP - 모든 프롬프트를 위한 최신 코드 문서
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 [![繁體中文](https://img.shields.io/badge/docs-繁體中文-yellow)](./README.zh-TW.md) [![简体中文](https://img.shields.io/badge/docs-简体中文-yellow)](./README.zh-CN.md) [![日本語](https://img.shields.io/badge/docs-日本語-b7003a)](./README.ja.md) [![한국어 문서](https://img.shields.io/badge/docs-한국어-green)](./README.ko.md) [![Documentación en Español](https://img.shields.io/badge/docs-Español-orange)](./README.es.md) [![Documentation en Français](https://img.shields.io/badge/docs-Français-blue)](./README.fr.md) [![Documentação em Português (Brasil)](<https://img.shields.io/badge/docs-Português%20(Brasil)-purple>)](./README.pt-BR.md) [![Documentazione in italiano](https://img.shields.io/badge/docs-Italian-red)](./README.it.md) [![Dokumentasi Bahasa Indonesia](https://img.shields.io/badge/docs-Bahasa%20Indonesia-pink)](./README.id-ID.md) [![Dokumentation auf Deutsch](https://img.shields.io/badge/docs-Deutsch-darkgreen)](./README.de.md) [![Документация на русском языке](https://img.shields.io/badge/docs-Русский-darkblue)](./README.ru.md) [![Türkçe Doküman](https://img.shields.io/badge/docs-Türkçe-blue)](./README.tr.md) [![Arabic Documentation](https://img.shields.io/badge/docs-Arabic-white)](./README.ar.md)
 
@@ -48,13 +48,13 @@ Context7에 여러분이 좋아하는 라이브러리를 추가(또는 업데이
 <details>
 <summary><b>Smithery를 통한 설치</b></summary>
 
-[Smithery](https://smithery.ai/server/@upstash/context7-mcp)를 통해 모든 클라이언트에 Context7 MCP 서버를 자동으로 설치하려면:
+[Smithery](https://smithery.ai/server/@toxicoder/context7-mcp)를 통해 모든 클라이언트에 Context7 MCP 서버를 자동으로 설치하려면:
 
 ```bash
-npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
+npx -y @smithery/cli@latest install @toxicoder/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
 ```
 
-Smithery 키는 [Smithery.ai 웹페이지](https://smithery.ai/server/@upstash/context7-mcp)에서 찾을 수 있습니다.
+Smithery 키는 [Smithery.ai 웹페이지](https://smithery.ai/server/@toxicoder/context7-mcp)에서 찾을 수 있습니다.
 
 </details>
 
@@ -90,7 +90,7 @@ Smithery 키는 [Smithery.ai 웹페이지](https://smithery.ai/server/@upstash/c
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -106,7 +106,7 @@ Smithery 키는 [Smithery.ai 웹페이지](https://smithery.ai/server/@upstash/c
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -128,7 +128,7 @@ Smithery 키는 [Smithery.ai 웹페이지](https://smithery.ai/server/@upstash/c
         "run",
         "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION",
         "--allow-net",
-        "npm:@upstash/context7-mcp"
+        "npm:@toxicoder/context7-mcp"
       ]
     }
   }
@@ -163,7 +163,7 @@ Windsurf MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [Wi
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -196,7 +196,7 @@ Windsurf MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [Wi
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -207,8 +207,8 @@ Windsurf MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [Wi
 <details>
 <summary><b>VS Code에 설치</b></summary>
 
-[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
-[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 VS Code MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [VS Code MCP 문서](https://code.visualstudio.com/docs/copilot/chat/mcp-servers)를 참조하세요.
 
@@ -233,7 +233,7 @@ VS Code MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [VS 
     "context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -270,7 +270,7 @@ Visual Studio MCP 설정 파일에 다음을 추가하세요(자세한 내용은
       "context7": {
         "type": "stdio",
         "command": "npx",
-        "args": ["-y", "@upstash/context7-mcp"]
+        "args": ["-y", "@toxicoder/context7-mcp"]
       }
     }
   }
@@ -292,7 +292,7 @@ Visual Studio MCP 설정 파일에 다음을 추가하세요(자세한 내용은
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -325,7 +325,7 @@ Visual Studio MCP 설정 파일에 다음을 추가하세요(자세한 내용은
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -349,7 +349,7 @@ claude mcp add --transport http context7 https://mcp.context7.com/mcp
 #### Claude Code 로컬 서버 연결
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp
 ```
 
 </details>
@@ -364,7 +364,7 @@ Claude Desktop의 `claude_desktop_config.json` 파일에 다음을 추가하세�
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -396,7 +396,7 @@ Claude Desktop의 `claude_desktop_config.json` 파일에 다음을 추가하세�
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -457,7 +457,7 @@ Claude Desktop의 `claude_desktop_config.json` 파일에 다음을 추가하세�
       "type": "local",
       "command": "npx",
       "tools": ["get-library-docs", "resolve-library-id"],
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -485,7 +485,7 @@ MCP 서버를 Docker 컨테이너에서 실행하려면:
    WORKDIR /app
 
    # 최신 버전 전역 설치
-   RUN npm install -g @upstash/context7-mcp
+   RUN npm install -g @toxicoder/context7-mcp
 
    # 필요한 경우 기본 포트 노출 (선택 사항, MCP 클라이언트 상호 작용에 따라 다름)
    # EXPOSE 3000
@@ -535,9 +535,9 @@ Windows에서의 설정은 Linux나 macOS와 약간 다릅니다 (_예시에서�
 ```json
 {
   "mcpServers": {
-    "github.com/upstash/context7-mcp": {
+    "github.com/toxicoder/context7-mcp": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp@latest"],
       "disabled": false,
       "autoApprove": []
     }
@@ -561,7 +561,7 @@ Augment Code에서 Context7 MCP를 설정하려면 그래픽 인터페이스 또
 5. 다음 명령을 입력합니다:
 
    ```
-   npx -y @upstash/context7-mcp@latest
+   npx -y @toxicoder/context7-mcp@latest
    ```
 
 6. MCP 이름을 **Context7**으로 지정합니다.
@@ -583,7 +583,7 @@ MCP 서버가 추가되면 Augment Code 내에서 직접 Context7의 최신 코�
 {
 "name": "context7",
 "command": "npx",
-"args": ["-y", "@upstash/context7-mcp"]
+"args": ["-y", "@toxicoder/context7-mcp"]
 }
 ]
 }
@@ -617,7 +617,7 @@ Roo Code MCP 설정 파일에 다음을 추가하세요. 자세한 내용은 [Ro
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -638,7 +638,7 @@ Zencoder에서 Context7 MCP를 설정하려면 다음 단계를 따르세요:
 ```json
 {
   "command": "npx",
-  "args": ["-y", "@upstash/context7-mcp@latest"]
+  "args": ["-y", "@toxicoder/context7-mcp@latest"]
 }
 ```
 
@@ -656,7 +656,7 @@ Amazon Q Developer CLI 설정 파일에 다음을 추가하세요. 자세한 내
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -701,7 +701,7 @@ Amazon Q Developer CLI 설정 파일에 다음을 추가하세요. 자세한 내
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -724,7 +724,7 @@ Amazon Q Developer CLI 설정 파일에 다음을 추가하세요. 자세한 내
 {
   "Context7": {
     "command": "npx",
-    "args": ["-y", "@upstash/context7-mcp"],
+    "args": ["-y", "@toxicoder/context7-mcp"],
     "env": {},
     "working_directory": null,
     "start_on_launch": true
@@ -760,7 +760,7 @@ Opencode 설정 파일에 다음을 추가하세요. 자세한 내용은 [Openco
   "mcp": {
     "context7": {
       "type": "local",
-      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "command": ["npx", "-y", "@toxicoder/context7-mcp"],
       "enabled": true
     }
   }
@@ -783,7 +783,7 @@ Opencode 설정 파일에 다음을 추가하세요. 자세한 내용은 [Openco
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"],
+      "args": ["-y", "@toxicoder/context7-mcp"],
       "env": {},
       "disabled": false,
       "autoApprove": []
@@ -806,7 +806,7 @@ OpenAI Codex MCP 서버 설정에 다음 설정을 추가하세요:
 
 ```toml
 [mcp_servers.context7]
-args = ["-y", "@upstash/context7-mcp"]
+args = ["-y", "@toxicoder/context7-mcp"]
 command = "npx"
 ```
 
@@ -909,7 +909,7 @@ bun run dist/index.js --transport http --port 8080
 <summary><b>MCP Inspector로 테스트</b></summary>
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 
 </details>
@@ -926,7 +926,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -946,7 +946,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -964,7 +964,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-fetch", "@upstash/context7-mcp"]
+      "args": ["-y", "--node-options=--experimental-fetch", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -1007,7 +1007,7 @@ Context7 프로젝트는 커뮤니티 기여로 이루어지며, 높은 품질�
 
 ## ⭐ Star History
 
-[![Star 기록 차트](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Star 기록 차트](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## 라이선스
 

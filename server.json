@@ -1,16 +1,16 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.upstash/context7",
+  "name": "io.github.toxicoder/context7",
   "title": "Context7",
   "description": "Up-to-date code docs for any prompt",
   "repository": {
-    "url": "https://github.com/upstash/context7",
+    "url": "https://github.com/toxicoder/context7",
     "source": "github"
   },
   "websiteUrl": "https://context7.com",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/upstash/context7/master/public/icon.png",
+      "src": "https://raw.githubusercontent.com/toxicoder/context7/master/public/icon.png",
       "mimeType": "image/png"
     }
   ],
@@ -18,7 +18,7 @@
   "packages": [
     {
       "registryType": "npm",
-      "identifier": "@upstash/context7-mcp",
+      "identifier": "@toxicoder/context7-mcp",
       "version": "1.0.26",
       "transport": {
         "type": "stdio"
@@ -34,7 +34,7 @@
     },
     {
       "registryType": "mcpb",
-      "identifier": "https://raw.githubusercontent.com/upstash/context7/master/packages/mcp/mcpb/context7.mcpb",
+      "identifier": "https://raw.githubusercontent.com/toxicoder/context7/master/packages/mcp/mcpb/context7.mcpb",
       "version": "1.0.1",
       "fileSha256": "aea76f179ceb92d22c289147c9d8343fb558d6dec93b144c9794e99239bb8194",
       "transport": {

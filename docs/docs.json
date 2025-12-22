@@ -82,7 +82,7 @@
       },
       {
         "label": "GitHub",
-        "href": "https://github.com/upstash/context7"
+        "href": "https://github.com/toxicoder/context7"
       }
     ],
     "primary": {
@@ -94,7 +94,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/context7ai",
-      "github": "https://github.com/upstash/context7",
+      "github": "https://github.com/toxicoder/context7",
       "discord": "https://upstash.com/discord"
     },
     "links": [
@@ -120,7 +120,7 @@
         "items": [
           {
             "label": "GitHub",
-            "href": "https://github.com/upstash/context7"
+            "href": "https://github.com/toxicoder/context7"
           },
           {
             "label": "Discord",

@@ -1,7 +1,7 @@
 {
-  "name": "@upstash/context7-mcp",
+  "name": "@toxicoder/context7-mcp",
   "version": "1.0.36",
-  "mcpName": "io.github.upstash/context7",
+  "mcpName": "io.github.toxicoder/context7",
   "description": "MCP server for Context7",
   "scripts": {
     "build": "tsc && chmod 755 dist/index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upstash/context7.git",
+    "url": "git+https://github.com/toxicoder/context7.git",
     "directory": "packages/mcp"
   },
   "keywords": [
@@ -41,9 +41,9 @@
     "README.md"
   ],
   "bugs": {
-    "url": "https://github.com/upstash/context7/issues"
+    "url": "https://github.com/toxicoder/context7/issues"
   },
-  "homepage": "https://github.com/upstash/context7#readme",
+  "homepage": "https://github.com/toxicoder/context7#readme",
   "publishConfig": {
     "access": "public"
   },

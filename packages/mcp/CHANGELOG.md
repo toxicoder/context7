@@ -1,4 +1,4 @@
-# @upstash/context7-mcp
+# @toxicoder/context7-mcp
 
 ## 1.0.36
 

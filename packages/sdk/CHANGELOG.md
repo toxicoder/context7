@@ -1,4 +1,4 @@
-# @upstash/context7-sdk
+# @toxicoder/context7-sdk
 
 ## 0.1.0
 

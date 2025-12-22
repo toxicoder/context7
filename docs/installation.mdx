@@ -54,13 +54,13 @@ For most users, we recommend:
 
 ### Via Smithery
 
-Install the Context7 MCP automatically for any client via [Smithery](https://smithery.ai/server/@upstash/context7-mcp):
+Install the Context7 MCP automatically for any client via [Smithery](https://smithery.ai/server/@toxicoder/context7-mcp):
 
 ```bash
-npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
+npx -y @smithery/cli@latest install @toxicoder/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
 ```
 
-Get your Smithery key from your account at [smithery.ai](https://smithery.ai/server/@upstash/context7-mcp).
+Get your Smithery key from your account at [smithery.ai](https://smithery.ai/server/@toxicoder/context7-mcp).
 
 ## Client-Specific Installation
 
@@ -96,7 +96,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -113,7 +113,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
 
     **Local Server**:
     ```bash
-    claude mcp add context7 -- npx -y @upstash/context7-mcp --api-key YOUR_API_KEY
+    claude mcp add context7 -- npx -y @toxicoder/context7-mcp --api-key YOUR_API_KEY
     ```
 
   </Accordion>
@@ -143,7 +143,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
         "context7": {
           "type": "stdio",
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -172,7 +172,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -227,7 +227,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
         "Context7": {
           "source": "custom",
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -239,7 +239,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     **Via UI**:
     1. Hamburger menu → **Settings** → **Tools**
     2. Click **+ Add MCP**
-    3. Enter command: `npx -y @upstash/context7-mcp@latest`
+    3. Enter command: `npx -y @toxicoder/context7-mcp@latest`
     4. Name: **Context7**
 
     **Manual Configuration**:
@@ -249,7 +249,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
         {
           "name": "context7",
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       ]
     }
@@ -279,7 +279,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -344,7 +344,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -376,7 +376,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -396,7 +396,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -425,7 +425,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcp": {
         "context7": {
           "type": "local",
-          "command": ["npx", "-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+          "command": ["npx", "-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
           "enabled": true
         }
       }
@@ -445,7 +445,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     **Local Server**:
     ```toml
     [mcp_servers.context7]
-    args = ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+    args = ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     command = "npx"
     ```
 
@@ -464,7 +464,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     [mcp_servers.context7]
     command = "/Users/yourname/.nvm/versions/node/v22.14.0/bin/node"
     args = [
-      "/Users/yourname/.nvm/versions/node/v22.14.0/lib/node_modules/@upstash/context7-mcp/dist/index.js",
+      "/Users/yourname/.nvm/versions/node/v22.14.0/lib/node_modules/@toxicoder/context7-mcp/dist/index.js",
       "--transport", "stdio", "--api-key", "YOUR_API_KEY"
     ]
     ```
@@ -482,7 +482,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -502,7 +502,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "Context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
           "env": {},
           "disabled": false,
           "autoApprove": []
@@ -531,7 +531,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -549,7 +549,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "Context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -582,7 +582,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
           "context7": {
             "type": "stdio",
             "command": "npx",
-            "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+            "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
           }
         }
       }
@@ -616,7 +616,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
         "context7": {
           "type": "stdio",
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -632,7 +632,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -665,7 +665,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -682,7 +682,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     ```json
     {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
     ```
 
@@ -699,7 +699,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -745,7 +745,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -763,7 +763,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
 
     ```json
     {
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
       "command": "npx",
       "env": {}
     }
@@ -780,7 +780,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     {
       "Context7": {
         "command": "npx",
-        "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+        "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
         "env": {},
         "working_directory": null,
         "start_on_launch": true
@@ -848,7 +848,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
           ],
           "args": [
             "-y",
-            "@upstash/context7-mcp",
+            "@toxicoder/context7-mcp",
             "--api-key",
             "YOUR_API_KEY"
           ]
@@ -867,7 +867,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "npx",
-          "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+          "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
         }
       }
     }
@@ -882,7 +882,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
       "mcpServers": {
         "context7": {
           "command": "cmd",
-          "args": ["/c", "npx", "-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+          "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"],
           "disabled": false,
           "autoApprove": []
         }
@@ -914,7 +914,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
     Run this command in your terminal:
 
     ```sh
-    droid mcp add context7 "npx -y @upstash/context7-mcp" --env CONTEXT7_API_KEY=YOUR_API_KEY
+    droid mcp add context7 "npx -y @toxicoder/context7-mcp" --env CONTEXT7_API_KEY=YOUR_API_KEY
     ```
 
     Once configured, Context7 tools will be available in your droid sessions. Type `/mcp` within droid to manage servers, authenticate, and view available tools.
@@ -946,7 +946,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -963,7 +963,7 @@ Get your Smithery key from your account at [smithery.ai](https://smithery.ai/ser
         "run",
         "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION",
         "--allow-net",
-        "npm:@upstash/context7-mcp"
+        "npm:@toxicoder/context7-mcp"
       ]
     }
   }
@@ -977,7 +977,7 @@ Create a `Dockerfile`:
 ```dockerfile
 FROM node:18-alpine
 WORKDIR /app
-RUN npm install -g @upstash/context7-mcp
+RUN npm install -g @toxicoder/context7-mcp
 CMD ["context7-mcp"]
 ```
 
@@ -1000,14 +1000,14 @@ docker build -t context7-mcp .
 
 ## Desktop Extension
 
-Install the [context7.mcpb](https://github.com/upstash/context7/blob/master/mcpb/context7.mcpb) file. See [MCP bundles docs](https://github.com/anthropics/mcpb#mcp-bundles-mcpb) for details.
+Install the [context7.mcpb](https://github.com/toxicoder/context7/blob/master/mcpb/context7.mcpb) file. See [MCP bundles docs](https://github.com/anthropics/mcpb#mcp-bundles-mcpb) for details.
 
 ## Verify Installation
 
 Test your setup with the MCP Inspector:
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 
 <Tip>

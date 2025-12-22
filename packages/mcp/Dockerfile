@@ -17,7 +17,7 @@ COPY packages/mcp ./packages/mcp
 RUN pnpm install --frozen-lockfile
 
 # Build the mcp package
-RUN pnpm --filter @upstash/context7-mcp build
+RUN pnpm --filter @toxicoder/context7-mcp build
 
 # Production stage
 FROM node:22-alpine AS runner
@@ -38,7 +38,7 @@ COPY --from=builder /app/packages/mcp/dist ./packages/mcp/dist
 
 # Install production dependencies only
 # We use pnpm to respect lockfile
-RUN pnpm install --prod --frozen-lockfile --filter @upstash/context7-mcp
+RUN pnpm install --prod --frozen-lockfile --filter @toxicoder/context7-mcp
 
 # Expose port 3000
 EXPOSE 3000

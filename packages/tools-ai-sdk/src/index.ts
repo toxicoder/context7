@@ -20,4 +20,4 @@ export type {
   TextDocsResponse,
   InfoDocsResponse,
   Pagination,
-} from "@upstash/context7-sdk";
+} from "@toxicoder/context7-sdk";

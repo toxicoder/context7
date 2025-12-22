@@ -204,7 +204,7 @@ The response type is automatically inferred based on the `format` and `mode` par
 
 <RequestExample>
 ```typescript Code Docs (JSON - Default)
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7();
 
@@ -218,7 +218,7 @@ console.log(`Retrieved ${docs.snippets.length} code snippets`);
 ```
 
 ```typescript Code Docs (Text)
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7();
 
@@ -232,7 +232,7 @@ console.log(docs.content);
 ```
 
 ```typescript Info Docs (Text)
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -248,7 +248,7 @@ console.log(docs.content);
 ```
 
 ```typescript Info Docs (JSON)
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -266,7 +266,7 @@ docs.snippets.forEach((snippet) => {
 ```
 
 ```typescript With Pagination
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -294,7 +294,7 @@ if (page1.pagination.hasNext) {
 ```
 
 ```typescript With Topic Filter
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -311,7 +311,7 @@ console.log(`Found ${hooks.snippets.length} hook examples`);
 ```
 
 ```typescript With Version
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -332,7 +332,7 @@ const docs = await client.getDocs("/facebook/react", {
 ### Building a Documentation Chat Bot
 
 ```typescript
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -360,7 +360,7 @@ const reactHooksDocs = await getRelevantDocs("/facebook/react", "hooks");
 ### Fetching All Documentation Pages
 
 ```typescript
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
@@ -394,7 +394,7 @@ console.log(`Total snippets: ${allReactDocs.length}`);
 ### Extracting Code Examples
 
 ```typescript
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: process.env.CONTEXT7_API_KEY!,
