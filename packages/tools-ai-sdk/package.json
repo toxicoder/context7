@@ -1,5 +1,5 @@
 {
-  "name": "@upstash/context7-tools-ai-sdk",
+  "name": "@toxicoder/context7-tools-ai-sdk",
   "version": "0.1.0",
   "description": "Context7 tools for Vercel AI SDK",
   "type": "module",
@@ -29,12 +29,12 @@
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
-    "@upstash/context7-sdk": ">=0.1.0",
+    "@toxicoder/context7-sdk": ">=0.1.0",
     "ai": ">=5.0.0",
     "zod": ">=3.24.0"
   },
   "devDependencies": {
-    "@upstash/context7-sdk": "workspace:*",
+    "@toxicoder/context7-sdk": "workspace:*",
     "ai": "^5.0.0",
     "zod": "^3.24.0",
     "@ai-sdk/amazon-bedrock": "^3.0.55",
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upstash/context7.git",
+    "url": "git+https://github.com/toxicoder/context7.git",
     "directory": "packages/tools-ai-sdk"
   },
   "keywords": [
@@ -57,12 +57,12 @@
     "agent",
     "upstash"
   ],
-  "author": "Upstash",
+  "author": "toxicoder",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/upstash/context7/issues"
+    "url": "https://github.com/toxicoder/context7/issues"
   },
-  "homepage": "https://github.com/upstash/context7#readme",
+  "homepage": "https://github.com/toxicoder/context7#readme",
   "publishConfig": {
     "access": "public"
   }

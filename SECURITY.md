@@ -8,7 +8,7 @@ The following versions of Context7 MCP are currently supported with security upd
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |
 
-We recommend always using the latest version (`@upstash/context7-mcp@latest`) to ensure you have the most recent security patches and features.
+We recommend always using the latest version (`@toxicoder/context7-mcp@latest`) to ensure you have the most recent security patches and features.
 
 ## Reporting a Vulnerability
 

@@ -2,7 +2,7 @@
 
 > ⚠️ **Work in Progress**: This SDK is currently under active development. The API is subject to change and may introduce breaking changes in future releases.
 
-`@upstash/context7-sdk` is an HTTP/REST based client for TypeScript, built on top of the [Context7 API](https://context7.com).
+`@toxicoder/context7-sdk` is an HTTP/REST based client for TypeScript, built on top of the [Context7 API](https://context7.com).
 
 ## Why Context7?
 
@@ -23,7 +23,7 @@ Context7 solves this by providing up-to-date, version-specific documentation and
 ### Install
 
 ```bash
-npm install @upstash/context7-sdk
+npm install @toxicoder/context7-sdk
 ```
 
 ### Get API Key
@@ -33,7 +33,7 @@ Get your API key from [Context7](https://context7.com)
 ## Basic Usage
 
 ```ts
-import { Context7 } from "@upstash/context7-sdk";
+import { Context7 } from "@toxicoder/context7-sdk";
 
 const client = new Context7({
   apiKey: "<CONTEXT7_API_KEY>",
