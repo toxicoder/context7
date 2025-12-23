@@ -1,5 +1,12 @@
 # @toxicoder/context7-mcp
 
+## 1.0.37
+
+### Patch Changes
+
+- a07f8e7: fix: update publishConfig to allow public publishing and add .npmrc for CI auth
+- d6e39e6: chore: rebrand to @toxicoder/context7
+
 ## 1.0.36
 
 ### Patch Changes
